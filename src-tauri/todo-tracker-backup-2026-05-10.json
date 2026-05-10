@@ -1,0 +1,85 @@
+{
+  "tasks": [
+    {
+      "id": "0d3a46d1-1552-44f6-8769-b8fbd379c576",
+      "title": "ere",
+      "description": "erfe",
+      "due_date": "2026-05-19T18:38:00.000Z",
+      "priority": "low",
+      "status": "pending",
+      "category_id": "04708426-2170-4221-bca0-40e00329b798",
+      "is_pinned": false,
+      "completed_at": null,
+      "sort_order": 0,
+      "reminder_enabled": false,
+      "created_at": "2026-05-10 18:38:04",
+      "updated_at": "2026-05-10 18:38:18"
+    },
+    {
+      "id": "c8e45e3b-a5c2-4ddc-b069-56be2581aee8",
+      "title": "dsf",
+      "description": "fs",
+      "due_date": "2026-05-11T18:38:00.000Z",
+      "priority": "high",
+      "status": "pending",
+      "category_id": "5cdcef3e-95ab-4258-9d14-bc84b03517fe",
+      "is_pinned": false,
+      "completed_at": null,
+      "sort_order": 1,
+      "reminder_enabled": false,
+      "created_at": "2026-05-10 18:38:51",
+      "updated_at": "2026-05-10 18:38:51"
+    }
+  ],
+  "categories": [
+    {
+      "id": "6270701f-d568-4c30-8527-3b8045339bba",
+      "name": "Personal",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "8d53cc54-2a67-4007-bc6e-5071591449d6",
+      "name": "Work",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "1d3e9b77-dc4f-4b5c-a3c9-8c0ef4aaf85b",
+      "name": "Learning",
+      "color": "#10b981"
+    },
+    {
+      "id": "406ab574-5fd5-4bd4-b44f-3596f4a827be",
+      "name": "Shopping",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "893f6a7f-f4e1-4b0f-8fe1-f5ff4d3326a6",
+      "name": "Personal",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "04708426-2170-4221-bca0-40e00329b798",
+      "name": "Work",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "21d2fce9-21e9-4636-a340-93a4d885f24d",
+      "name": "Learning",
+      "color": "#10b981"
+    },
+    {
+      "id": "5cdcef3e-95ab-4258-9d14-bc84b03517fe",
+      "name": "Shopping",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "7599786f-b1db-47da-a512-664bab68d95a",
+      "name": "yes",
+      "color": "#06b6d4"
+    }
+  ],
+  "settings": {
+    "theme": "light"
+  },
+  "exportDate": "2026-05-10T18:43:36.676Z"
+}
