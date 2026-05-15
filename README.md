@@ -76,3 +76,19 @@ A high-performance, offline-first Windows desktop application built for professi
    ```bash
    npm run tauri build
    ```
+
+## 🏷 Renaming the Application
+
+To change the name of the application (e.g., from `tauri-app` to `TaskTracker`) and the resulting installer name:
+
+1. **Update `src-tauri/tauri.conf.json`**:
+   - Change `"productName": "tauri-app"` to your desired name (e.g., `"productName": "TaskTracker"`).
+   - Change `"identifier": "com.todotracker.app"` to a unique value (e.g., `"com.yourname.tasktracker"`).
+   - Update the `"title"` in the `"windows"` array if you want to change the window title.
+
+2. **Update `src-tauri/Cargo.toml`**:
+   - Change `name = "tauri-app"` to your desired binary name (use lowercase and dashes/underscores, e.g., `task-tracker`).
+   - Change `name = "tauri_app_lib"` under `[lib]` to match (e.g., `task_tracker_lib`).
+
+3. **Rebuild**:
+   - Run `npm run tauri build` to generate the installer with the new name.
