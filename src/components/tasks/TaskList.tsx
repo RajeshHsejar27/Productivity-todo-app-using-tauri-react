@@ -34,12 +34,20 @@ export const TaskList: React.FC<TaskListProps> = ({ filter, categoryId, searchQu
 
   if (filter === 'today') {
     filteredTasks = filteredTasks.filter(t => t.due_date && new Date(t.due_date).toDateString() === new Date().toDateString());
+  } else if (filter === 'upcoming') {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    filteredTasks = filteredTasks.filter(t => t.due_date && new Date(t.due_date) > today && new Date(t.due_date).toDateString() !== new Date().toDateString());
+    filteredTasks = [...filteredTasks].sort((a, b) => new Date(a.due_date!).getTime() - new Date(b.due_date!).getTime());
   } else if (filter === 'completed') {
     filteredTasks = filteredTasks.filter(t => t.status === 'completed');
   } else if (filter === 'category' && categoryId) {
     filteredTasks = filteredTasks.filter(t => t.category_id === categoryId);
   } else if (filter === 'overview') {
-    filteredTasks = filteredTasks.slice(0, 10); // Show recent 10 tasks on overview
+    // For overview, show the 10 most recently created tasks
+    filteredTasks = [...filteredTasks]
+      .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+      .slice(0, 10);
   }
 
   const handleCreateTask = async (e: React.FormEvent) => {
